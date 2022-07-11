@@ -1,0 +1,165 @@
+:root{
+    --celeste_marca: #00AEF0;
+    --textos_oscuros: rgba(25, 24, 24, 0.9);
+    --azul_oscuro: #095A78;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    line-height: 0;
+    position: fixed;
+}
+
+.navbar__container{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+.navbar_first__container{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar_first_items__container, .navbar_second_items__container{
+    display: flex;
+    align-items: center;
+}
+
+.navbar_first_items__container li, .navbar_second_items__container li{
+    margin-left: 25px;
+}
+
+.menu a{
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--textos_oscuros);
+}
+
+.nav ul a:hover{
+    background-color: none !important;
+}
+
+li{
+    font-weight: 400;
+    font-size: 1.6rem;
+    list-style-type: none;
+    color: var(--textos_oscuros);
+}
+
+.last24:hover, .last24:active{
+    color: var(--celeste_marca);
+}
+
+.last24:active{
+    font-weight: 500;
+}
+
+.user__name{
+    margin-right: 0;
+}
+
+.user__img li{
+    margin-right: 50px;
+}
+
+.navbar_second__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit{
+    justify-self: flex-end;
+    width: 18px;
+    height: 18px;
+}
+
+.tabs{
+    background-color: transparent;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.tab{
+    overflow: hidden;
+}
+
+.tabs .tab a{
+    text-transform: none;
+    color: var(--textos_oscuros);
+    font-size: 1.7rem;
+}
+
+.tabs .tab a.active{
+    font-weight: 500;
+    color: var(--celeste_marca);
+}
+
+.tabs .tab a:hover{
+    color: var(--celeste_marca);
+}
+
+.tabs .tab a:focus{
+    color: var(--celeste_marca);
+}
+
+.tabs .indicator{
+    color: var(--celeste_marca);
+    background-color: var(--celeste_marca);
+}
+
+.tabs .tab a:focus, .tabs .tab a:focus.active{
+    background-color: transparent;
+}
+
+.tabs a {
+    line-height: 30px;
+}
+
+.verticalDivider{
+    position:absolute;
+    left:50%;
+    top:10%;
+    bottom:10%;
+    border-left: 2px solid var(--azul_oscuro);
+}
+
+.news, .sections{
+    margin-top: 65px;
+}
+
+.news h4, .sections h4{
+    font-weight: 800;
+    color: var(--azul_oscuro);
+    line-height: 2.9rem;
+}
+
+.news ul, .sections ul{
+    margin-top: 37px;
+}
+
+.news li, .sections li{
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    height: 20px;
+}
+
+.dropdown-content li:hover{
+    background-color: transparent;
+    text-decoration: underline;
+}

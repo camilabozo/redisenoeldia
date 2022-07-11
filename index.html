@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El día - Las últimas 24hs de noticias</title>
+    <link rel="stylesheet" href="materialize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar__container">
+        <section class="navbar_first__container">
+            <ul class="navbar_first_items__container">
+                <li class="logo">
+                    <img src="./assets/logo.png" alt="Logo El dia">
+                </li>
+                <li class="menu"><a class='dropdown-trigger' href='#' data-target='dropdown1'>Menú <img src="./assets/dropdown.png" alt="dropdown"></a></li>
+                <li class="last24">Últimas 24 horas</li>
+            </ul>
+            <section id="dropdown1" class='dropdown-content'>
+                <div class="news">
+                    <h4>NOTICIAS</h4>
+                    <ul>
+                        <li>La Región</li>
+                        <li>Policiales</li>
+                        <li>Política y Economía</li>
+                        <li>Deportes</li>
+                        <li>Sociedad</li>
+                        <li>Espectáculos</li>
+                        <li>Opinión</li>
+                        <li>El Mundo</li>
+                    </ul>
+                </div>
+                <div class="verticalDivider"></div>
+                <div class="sections">
+                    <h4>MÁS SECCIONES</h4>
+                    <ul>
+                        <li>Juegos</li>
+                        <li>Edición Impresa</li>
+                        <li>Club El Día</li>
+                        <li>Podcasts</li>
+                        <li>Blogs</li>
+                        <li>Suplementos</li>
+                        <li>Avisos</li>
+                    </ul>
+                </div>
+            </section>
+            <ul class="navbar_second_items__container">
+                <li class="search__bar">
+                    <img src="./assets/search.png" alt="">
+                </li>
+                <li class="games">Juegos</li>
+                <li> | </li>
+                <li class="user__name">Marta1540ds</li>
+                <li class="user__img"><img src="./assets/user.png" alt="Perfil Usuario"></li>
+            </ul>
+        </section>
+        <section class="navbar_second__container">
+                <ul class="tabs">
+                    <li class="tab"><a class="active" href="#politic">Política y Economia</a></li>
+                    <li class="tab"><a href="#sport">Deportes</a></li>
+                    <li class="tab"><a href="#spectacle">Espectáculos</a></li>
+                </ul>
+                <a class="edit" href=""><img  src="./assets/edit.png" alt="Editar"></a>
+
+            <div id="politic" class="col s12">POLIITICA</div>
+            <div id="sport" class="col s12">DEPORTES</div>
+            <div id="spectacle" class="col s12">ESPECTACULOS</div>
+            
+        </section>
+    </nav>
+
+    <main class="main__container">
+    </main>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="materialize.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
