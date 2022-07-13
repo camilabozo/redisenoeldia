@@ -9,15 +9,29 @@
     padding: 0;
     margin: 0;
 }
-
+ 
 html{
     font-size: 62.5%;
     font-family: 'Roboto', sans-serif;
 }
 
+/* ================agregado del scroll=====================*/
+
+.main__container {
+  height: 100%;
+  margin-top: 0px;
+  position: sticky;
+  top: 0px;
+ 
+}
+
+/* ================agregado del scroll=====================*/
+
 nav{
     line-height: 0;
     position: fixed;
+    top: 0px;
+    z-index: 1000;
 }
 
 .navbar__container{
@@ -163,3 +177,69 @@ li{
     background-color: transparent;
     text-decoration: underline;
 }
+
+
+
+
+/* ================ ULTIMAS 24HS=====================*/
+
+#pinContainer {
+  width: 100%; 
+  height: 100vh;
+  overflow: hidden;
+  -webkit-perspective: 1000;
+  perspective: 1000;
+}
+
+#slideContainer {
+  width: 400%;
+  height: 100vh;
+}
+
+.panel {
+  height: 100vh;
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.text{
+  margin-top: 100px;
+  display: inline-block;
+}
+
+.one {
+  background-color:  white;
+  color: black;
+}
+.one button {
+  display: block;
+  margin: 0 auto;
+}
+
+.two {
+  background-color:  white;
+  color: black;
+}
+
+.three {
+  background-color:  white;
+  color: black;
+  position: relative;
+}
+
+.four {
+  background-color: white;
+  color: black;
+}
+
+.timeline{
+    margin-top: 145px;
+    width: 300%;
+    position: sticky;
+}
+
+
+
+
+/* ==================================================*/
