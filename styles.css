@@ -235,7 +235,7 @@ li{
 
 .timeline{
     margin-top: 145px;
-    width: 300%;
+    width: 420%;
     position: sticky;
 }
 
@@ -243,59 +243,166 @@ li{
 /* ========================BLOQUES CARDS==========================*/
 
 
-.block_1{
-  display: inline-block;
-  margin-right: 720px;
-  margin-top: 1vh;
-   
-    
-}
 
-.main__container .panel .block_1 div:first-child{
-    
 
-    background-image: linear-gradient(359.97deg, rgba(0, 0, 0, 0.75) 35.61%, rgba(63, 62, 62, 0) 82.71%),
-    url('data/news_1.png');
 
+
+
+
+
+
+
+/* ========================CARDS==========================*/
+ 
+ 
+.main-container_card .container {
+ 
+    position: relative;
     display: flex;
-    align-items: end;
-    height: 356px;
-    width: 602px;
-    justify-content: space-around;
+    justify-content: center;
    
-
-
+    max-width: 602px;
+    flex-wrap: wrap;
+    z-index: 1;
+ 
+   bottom: 21vh;
+   margin-left: 4%;
+    margin-right: 720px;
+ margin-bottom: 1vh;
+ width:602px;
 }
-
-.main__container .panel .block_1 div:last-child  {
-    
-    height: 145px;
+ 
+ 
+.main-container_card .container .card {
+    position: relative;
+    height: 300px;
     width: 602px;
-    margin-top: 2vh;
+    margin: 30px;
+    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+}
+ 
+ 
+.news_image_text{
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.2);
+    width: 90%;
     display: flex;
     flex-direction: row;
-    align-items: center;  
-
-    
+    align-items: center;
 }
-
-
-.main__container .panel .block_1 div:last-child  div{
-    
-    height: 145px;
-    width: 602px;
-    margin-top: 2vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: start;
+ 
+ 
+.news_image_text div:last-child{
+ 
+   margin-left: 2%;
+   margin-right: 2%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: start;
+}
+ 
+ 
+ 
+.news_img{
+    width: auto;
+    height: 80%;
     margin-left: 2%;
-    margin-top: 10% ;
-    margin-bottom: 10%  ;
-    justify-content: space-between;
-    
-    
+   
 }
+ 
+.main-container_card .container .card-2 .content {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+   
+    align-items: flex-end;
+}
+ 
+.main-container_card .container .card  .preview{
+ 
+    background-image: linear-gradient(359.97deg, rgba(0, 0, 0, 0.75) 35.61%, rgba(63, 62, 62, 0) 82.71%),
+    url('data/news_1.png');
+ 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    opacity: 1;
+    transition: all .6s;
+}
+.preview h4{
+    color: #fff;
+    font-size: 22px;
+    margin: 5%;
+}
+ 
+ 
+.main-container_card .container .card-2:hover .preview {
+    opacity: 0;
+   
+ 
+}
+ 
+ 
+ 
+ 
+.main-container_card .container .card:hover .content {
+    background-image: linear-gradient(359.97deg, rgba(0, 0, 0, 0.79) 51.47%, rgba(63, 62, 62, 0) 99.98%),
+    url('data/news_1.png');
+ 
+   width: 100%;
+   height: 100%;
+   
+    transform: translateY(0px);
+    opacity: 1;
+}
+ 
+ 
+.main-container_card .container .card .content h2 {
+    position: absolute;
+    top: -80px;
+    right: 30px;
+    font-size: 6em;
+    color: rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+}
+ 
+ 
+.main-container_card .container .card .content h3 {
+    font-size: 1.8em;
+    color: #fff;
+    z-index: 1;
+    letter-spacing: 2px;
+}
+ 
+ 
+.main-container_card .container .card .content p {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+ 
+
+
 
 .white-tittle{
     text-align: start;
@@ -312,10 +419,15 @@ li{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    
-    
+    font-size: 18px;
+    line-height: 20px;
+
+
+}
+
+
+.black-tittle:hover {
+    text-decoration: underline;
 }
 
 .black-tittle_hour{
@@ -326,83 +438,18 @@ li{
 
 }
 
+.white-tittle_content{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
 
-.main__container .panel .block_1 div:last-child  img{
-    
-    width: auto;
-    height: 80%;
-    margin-left: 2%;
+}
+
+.white-tittle_content div:last-child p{
+    margin-top: 30px;
+}
+
+
+
  
-}
-
-
-.news_img{
-    width: 100%;
-    height: auto;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ========================CARDS==========================*/
-
-.news_image{
-background: linear-gradient(359.97deg, rgba(0, 0, 0, 0.75) 35.61%, rgba(63, 62, 62, 0) 82.71%);
-border-radius: 10px;
-box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.2);
-}
-
-.news_image_text{
-    border-radius: 10px;
-    box-shadow: 0px 4px 20px 3px rgba(0, 0, 0, 0.2);
-}
-
-
-.hover {
-  
-    display: inline-block;
-    background-image: linear-gradient(359.97deg, rgba(0, 0, 0, 0.75) 35.61%, rgba(63, 62, 62, 0) 82.71%),
-    url('data/news_1.png');
-   
- 
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .hover:before {
-    content:'Tormenta económica e inflación sin control: se espera que en julio el piso sea de 7%';
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .hover:after {
-    
-    content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
-    margin-left: -150px;
-    position: absolute;
-    opacity: 0;
-    z-index: 99999;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .hover:hover {
-    background-image: linear-gradient(359.97deg, rgba(0, 0, 0, 0.85) 51.47%, rgba(63, 62, 62, 0) 99.98%),
-    url('data/news_1.png');
-  }
-  
-  .hover:hover:before {
-    opacity: 0;
-  }
-  
-  .hover:hover:after {
-    opacity: 100;
-  }
