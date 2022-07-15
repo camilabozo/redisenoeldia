@@ -198,7 +198,7 @@ li{
 
 .panel {
   height: 100vh;
-  width: 25%;
+  width: 600px;
   float: left;
   text-align: center;
 }
@@ -235,8 +235,9 @@ li{
 
 .timeline{
     margin-top: 145px;
-    width: 420%;
+    width: 850%;
     position: sticky;
+    z-index: 3;
 }
 
 
@@ -266,7 +267,7 @@ li{
     z-index: 1;
  
    bottom: 21vh;
-   margin-left: 4%;
+  
     margin-right: 720px;
  margin-bottom: 1vh;
  width:602px;
